@@ -1,0 +1,39 @@
+.Category {}
+
+@import"../../style/style.scss";
+// .buttonGroup {
+ 
+//   display: flex;
+//   flex-wrap: wrap;
+//   column-gap: 25px;
+//   row-gap: 14px;
+
+// }
+
+// .btn {
+//   padding: 8px 18px;
+//   border-radius: 20px;
+//   border: 1px solid #9ca3af;
+//   background: transparent;
+//   cursor: pointer;
+
+
+//   transition: all 0.4s ease;
+//   color: 
+// rgb(75, 85, 99);
+
+//   &:hover {
+//     background: #F9FAFB ;
+//      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+//   }
+// }
+
+.active {
+  background: #000;
+  color: #fff;
+
+  &:hover{
+     background: #000 !important;
+  }
+}
