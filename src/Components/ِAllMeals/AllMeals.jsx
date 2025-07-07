@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import style from "./AllMeals.module.scss";
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+
 export default function AllMeals() {
    const [allMeals, setallMeals] = useState([]);
 

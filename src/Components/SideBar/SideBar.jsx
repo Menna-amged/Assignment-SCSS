@@ -58,20 +58,20 @@ export default function SideBar() {
               </li>
               <li className=" pb-5">
                 <Link
-                  to="/"
+                  to="/ingredients"
                   className="flex items-center py-2 px-8 hover:scale-105  hover:shadow-xl hover:shadow-orange-50 transition-all  bg-transparent border border-gray-300  rounded-xl font-semibold text-lg "
                 >
-                  <i className="fa-solid fa-utensils"></i>
+                  <i className="fa-solid fa-carrot"></i>
                   <span className="ms-3 ">Ingredients</span>
                 </Link>
               </li>
               <li className=" pb-5">
                 <Link
-                  to="/"
+                  to="/areas"
                   className="flex items-center py-2 px-8 hover:scale-105  hover:shadow-xl hover:shadow-orange-50 transition-all  bg-transparent border border-gray-300  rounded-xl font-semibold text-lg "
                 >
-                  <i className="fa-solid fa-utensils"></i>
-                  <span className="ms-3 ">Area</span>
+                  <i className="fa-solid fa-earth-americas"></i>
+                  <span className="ms-3 ">Areas</span>
                 </Link>
               </li>
             </ul>

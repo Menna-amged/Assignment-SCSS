@@ -36,7 +36,7 @@ function handleCategoryClick(categoryName) {
     onCategorySelect(categoryName === "All" ? "" : categoryName);
 }
 
-  return (
+    return (
     <>
       <div className="border-b border-gray-200">
         <h1 className=" text-4xl font-extrabold  my-5 bg-gradient-to-r from-orange-400   via-[#ca1023c4] to-[#c90519]  bg-clip-text text-transparent">
@@ -51,11 +51,9 @@ function handleCategoryClick(categoryName) {
             onChange={(e) => handleCategoryClick(e.target.value)}
           >
             {categories.map((category) => (
-              <>
-                <option key={category.idCategory} value={category.strCategory}>
-                  {category.strCategory}
-                </option>
-              </>
+              <option key={category.idCategory} value={category.strCategory}>
+                {category.strCategory}
+              </option>
             ))}
           </select>
         </div>

@@ -24,7 +24,12 @@ useEffect(()=>{
 
   return (
     <>
-      <div className="flex flex-col lg:flex-row gap-4 pb-5">
+      {!mealdetails ? (
+        <div className="flex justify-center items-center h-64">
+          <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-orange-500"></div>
+        </div>
+      ) : (
+        <div className="flex flex-col lg:flex-row gap-4 pb-5">
         <div className="lg:w-2/3">
           <h1 className="text-5xl font-extrabold  my-5">
             {mealdetails?.strMeal}
@@ -91,6 +96,7 @@ useEffect(()=>{
           </div>
         </div>
       </div>
+      )}
     </>
   );
 }

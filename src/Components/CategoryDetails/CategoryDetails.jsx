@@ -40,7 +40,12 @@ export default function CategoryDetails() {
   return (
     <>
       <Category />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 my-20">
+      {meals.length === 0 ? (
+        <div className="flex justify-center items-center h-64">
+          <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-orange-500"></div>
+        </div>
+      ) : (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 my-20">
         {meals.map((meal) => (
           <div key={meal.idMeal}>
             <div
@@ -62,7 +67,8 @@ export default function CategoryDetails() {
             </div>
           </div>
         ))}
-      </div>
+        </div>
+      )}
     </>
   );
 }
