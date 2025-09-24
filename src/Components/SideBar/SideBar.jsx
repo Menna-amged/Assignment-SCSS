@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import style from "./SideBar.module.scss";
+import style from "./SideBar.module.css";
 import logo from "../../assets/images/logo.png"
 import { Link } from 'react-router-dom';
 import { initDrawers } from 'flowbite';
@@ -73,6 +73,53 @@ export default function SideBar() {
                   <i className="fa-solid fa-earth-americas"></i>
                   <span className="ms-3 ">Areas</span>
                 </Link>
+              </li>
+              <li className=" pb-5">
+                <Link
+                  to="/contact"
+                  className="flex items-center py-2 px-8 hover:scale-105  hover:shadow-xl hover:shadow-orange-50 transition-all  bg-transparent border border-gray-300  rounded-xl font-semibold text-lg "
+                >
+                  <i className="fa-solid fa-envelope"></i>
+                  <span className="ms-3 ">Contact</span>
+                </Link>
+              </li>
+              
+              {/* Authentication Section */}
+              <li className="pb-5">
+                <div className="border-t border-gray-200 my-4"></div>
+              </li>
+              
+              <li className="pb-5">
+                <Link
+                  to="/signin"
+                  className="flex items-center py-2 px-8 hover:scale-105 hover:shadow-xl hover:shadow-green-50 transition-all bg-transparent border border-gray-300 rounded-xl font-semibold text-lg"
+                >
+                  <i className="fa-solid fa-sign-in-alt"></i>
+                  <span className="ms-3">Sign In</span>
+                </Link>
+              </li>
+              
+              <li className="pb-5">
+                <Link
+                  to="/signup"
+                  className="flex items-center py-2 px-8 hover:scale-105 hover:shadow-xl hover:shadow-blue-50 transition-all bg-transparent border border-gray-300 rounded-xl font-semibold text-lg"
+                >
+                  <i className="fa-solid fa-user-plus"></i>
+                  <span className="ms-3">Sign Up</span>
+                </Link>
+              </li>
+              
+              <li className="pb-5">
+                <button
+                  onClick={() => {
+                    // Here you would typically handle sign out logic
+                    alert('Signed out successfully!');
+                  }}
+                  className="flex items-center py-2 px-8 hover:scale-105 hover:shadow-xl hover:shadow-red-50 transition-all bg-transparent border border-gray-300 rounded-xl font-semibold text-lg w-full text-left"
+                >
+                  <i className="fa-solid fa-sign-out-alt"></i>
+                  <span className="ms-3">Sign Out</span>
+                </button>
               </li>
             </ul>
           </div>

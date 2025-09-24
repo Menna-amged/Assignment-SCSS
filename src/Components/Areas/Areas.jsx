@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useAreas } from '../../Hooks/useMeals';
 import { Link } from 'react-router-dom';
-import style from './Areas.module.scss';
+import style from './Areas.module.css';
 
 export default function Areas() {
   const { data: areas, isLoading, error } = useAreas();

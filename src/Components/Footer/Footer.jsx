@@ -1,5 +1,5 @@
 import React from 'react'
-import style from "./Footer.module.scss";
+import style from "./Footer.module.css";
 import logo from "../../assets/images/logo.png"
 import { Link } from 'react-router-dom';
 export default function Footer() {
@@ -11,7 +11,7 @@ export default function Footer() {
             <img className="w-16" src={logo} alt="logo" />
             <p className="text-2xl font-semibold">Recipe</p>
           </div>
-          <p className="text-2xl font-semibold text-blue-700">Route</p>
+
         </div>
         <hr className="my-5 border-gray-300 sm:mx-auto " />
 
@@ -22,7 +22,7 @@ export default function Footer() {
             className="hover:underline "
           >
             {" "}
-            Nagy Osama™
+            Menna Amged™
           </Link>
           . All Rights Reserved.
         </p>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useIngredientDetails, useMealsByIngredient } from '../../Hooks/useMeals';
-import style from './IngredientDetails.module.scss';
+import style from './IngredientDetails.module.css';
 
 export default function IngredientDetails() {
   const { ingredientName } = useParams();

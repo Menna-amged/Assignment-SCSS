@@ -1,0 +1,55 @@
+.ingredientDetails * {
+    transition: all 0.3s ease;
+}
+
+/* Custom scrollbar */
+.ingredientDetails::-webkit-scrollbar {
+    width: 8px;
+}
+
+.ingredientDetails::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.ingredientDetails::-webkit-scrollbar-thumb {
+    background: #ffa500;
+    border-radius: 4px;
+}
+
+.ingredientDetails::-webkit-scrollbar-thumb:hover {
+    background: #ff8c00;
+}
+
+/* Responsive image adjustments */
+.ingredientDetails img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.ingredientDetails img:hover {
+    transform: scale(1.05);
+}
+
+/* Grid responsive adjustments */
+@media (max-width: 640px) {
+    .ingredientDetails .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .ingredientDetails .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Card hover effects */
+.ingredientDetails .group:hover .bg-gray-50 {
+    background-color: #fef3c7;
+}
+
+/* Back button styling */
+.ingredientDetails a[href*="ingredients"]:hover {
+    transform: translateX(-4px);
+}

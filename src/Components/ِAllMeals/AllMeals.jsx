@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import style from "./AllMeals.module.scss";
+import style from "./AllMeals.module.css";
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+
 
 export default function AllMeals() {
    const [allMeals, setallMeals] = useState([]);
@@ -28,23 +29,23 @@ export default function AllMeals() {
         {allMeals.map((meal) => (
           <div key={meal.idMeal}>
             <div
-              className={`${style.meal} w-full h-[540px]  sm:h-[370px] md:h-[250px]  lg:h-[280px] `}
+              className="meal w-full h-[540px]  sm:h-[370px] md:h-[250px]  lg:h-[280px] "
             >
               <img
                 src={meal.strMealThumb}
-                className={`${style.mealImage} w-full max-w-[420px] sm:max-w-[250px] md:max-w-[130px]  lg:max-w-[150px] `}
+                className="mealImage w-full max-w-[420px] sm:max-w-[250px] md:max-w-[130px]  lg:max-w-[150px] "
                 alt={meal.strMeal}
               />
 
-              <h3 className={style.mealTitle}>
+              <h3 className="mealName">
                 {meal.strMeal.split(" ").slice(0, 2).join(" ")}
               </h3>
-              <h5 className={style.mealCountry}>
-                <i className="fa-solid fa-earth-americas me-2"></i>
+              <h5 className="text-[#059669] ">
+                <i className="fa-solid fa-earth-americas me-2 "></i>
                 {meal.strArea}
               </h5>
 
-              <button className={style.btnMeal}>
+              <button className="btnMeal">
                 <Link to={`/mealdetails/${meal.idMeal}`}>View Recipe</Link>
               </button>
             </div>

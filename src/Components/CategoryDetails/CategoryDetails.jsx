@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import style from "./CategoryDetails.module.scss";
+import style from "./CategoryDetails.module.css";
 import { Link, useParams } from 'react-router-dom';
 import axios from 'axios';
 import Category from '../Category/Category';
@@ -49,19 +49,19 @@ export default function CategoryDetails() {
         {meals.map((meal) => (
           <div key={meal.idMeal}>
             <div
-              className={`${style.meal} w-full h-[540px] sm:h-[370px] md:h-[250px] lg:h-[260px]`}
+              className="meal w-full h-[540px] sm:h-[370px] md:h-[250px] lg:h-[260px]"
             >
               <img
                 src={meal.strMealThumb}
-                className={`${style.mealImage} w-full max-w-[420px] sm:max-w-[250px] md:max-w-[130px]  lg:max-w-[150px]`}
+                className="mealImage w-full max-w-[420px] sm:max-w-[250px] md:max-w-[130px]  lg:max-w-[150px]"
                 alt={meal.strMeal}
               />
 
-              <h3 className={`${style.mealTitle} py-2`}>
+              <h3 className="mealTitle py-2">
                 {meal.strMeal.split(" ").slice(0, 2).join(" ")}
               </h3>
 
-              <button className={style.btnMeal}>
+              <button className="btnMeal">
                 <Link to={`/mealdetails/${meal.idMeal}`}>View Recipe</Link>
               </button>
             </div>

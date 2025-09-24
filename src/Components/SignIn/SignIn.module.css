@@ -1,0 +1,170 @@
+.authContainer {
+  min-height: 100vh;
+  background-color: #f5f5f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-family: 'Arial', sans-serif;
+}
+
+.authCard {
+  background: white;
+  border-radius: 12px;
+  padding: 3rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.authHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.authHeader h1 {
+  color: #333;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  color: #333;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.input {
+  padding: 0.75rem;
+  border: 2px solid #e1e5e9;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  outline: none;
+  background-color: white;
+}
+
+.input:focus {
+  border-color: #8B4513;
+  box-shadow: 0 0 0 3px rgba(139, 69, 19, 0.1);
+}
+
+.inputError {
+  border-color: #dc3545;
+}
+
+.passwordContainer {
+  position: relative;
+}
+
+.passwordInput {
+  padding-right: 3rem;
+}
+
+.passwordToggle {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.passwordToggle:hover {
+  color: #8B4513;
+}
+
+.errorMessage {
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.submitButton {
+  background-color: #8B4513;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.submitButton:hover {
+  background-color: #6d3410;
+}
+
+.submitButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.authFooter {
+  text-align: center;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.authFooter p {
+  color: #666;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.authLink {
+  color: #2563eb;
+  text-decoration: underline;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.authLink:hover {
+  color: #1d4ed8;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .authContainer {
+    padding: 1rem;
+  }
+  
+  .authCard {
+    padding: 2rem;
+  }
+  
+  .authHeader h1 {
+    font-size: 1.75rem;
+  }
+  
+  .authFooter {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}

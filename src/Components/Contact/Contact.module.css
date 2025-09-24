@@ -1,0 +1,257 @@
+.contactContainer {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  padding: 2rem;
+  font-family: 'Arial', sans-serif;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.formCard {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  grid-row: 1 / 3;
+}
+
+.formHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.formHeader i {
+  color: #8B4513;
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.formHeader h2 {
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.input,
+.textarea {
+  padding: 0.75rem;
+  border: 2px solid #e1e5e9;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  outline: none;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: #8B4513;
+  box-shadow: 0 0 0 3px rgba(139, 69, 19, 0.1);
+}
+
+.inputError {
+  border-color: #dc3545;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.errorMessage {
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.submitButton {
+  background-color: #8B4513;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.submitButton:hover {
+  background-color: #6d3410;
+}
+
+.submitButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.submitButton i {
+  font-size: 1rem;
+}
+
+.infoCard,
+.faqCard {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.infoCard h2,
+.faqCard h2 {
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 1.5rem 0;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.contactItem i {
+  color: #8B4513;
+  font-size: 1.25rem;
+  margin-top: 0.25rem;
+}
+
+.contactItem strong {
+  color: #333;
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.contactItem p {
+  color: #555;
+  margin: 0 0 0.25rem 0;
+  font-size: 0.95rem;
+}
+
+.contactItem small {
+  color: #777;
+  font-size: 0.85rem;
+}
+
+.faqList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.faqItem {
+  border-bottom: 1px solid #e1e5e9;
+  padding-bottom: 1.5rem;
+}
+
+.faqItem:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.faqQuestion {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.faqQuestion i {
+  color: #8B4513;
+  font-size: 1rem;
+}
+
+.faqQuestion strong {
+  color: #333;
+  font-size: 1rem;
+}
+
+.faqItem p {
+  color: #555;
+  margin: 0;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contactContainer {
+    padding: 1rem;
+  }
+  
+  .contactGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 1.5rem;
+  }
+  
+  .formCard {
+    grid-row: 1;
+  }
+  
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+  
+  .formCard,
+  .infoCard,
+  .faqCard {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactContainer {
+    padding: 0.5rem;
+  }
+  
+  .formCard,
+  .infoCard,
+  .faqCard {
+    padding: 1rem;
+  }
+  
+  .formHeader h2,
+  .infoCard h2,
+  .faqCard h2 {
+    font-size: 1.25rem;
+  }
+}

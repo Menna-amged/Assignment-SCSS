@@ -1,0 +1,39 @@
+.ingredients .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Custom scrollbar for ingredients grid */
+.ingredients .grid::-webkit-scrollbar {
+    width: 8px;
+}
+
+.ingredients .grid::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.ingredients .grid::-webkit-scrollbar-thumb {
+    background: #ffa500;
+    border-radius: 4px;
+}
+
+.ingredients .grid::-webkit-scrollbar-thumb:hover {
+    background: #ff8c00;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .ingredients .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .ingredients .grid {
+        grid-template-columns: 1fr;
+    }
+}

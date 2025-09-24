@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import style from "./Home.module.scss";
+import style from "./Home.module.css";
 import Meals from '../ِAllMeals/AllMeals';
 import Category from '../Category/Category';
 import axios from 'axios';

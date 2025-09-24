@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import style from "./Category.module.scss";
+import style from "./Category.module.css";
 import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -59,7 +59,7 @@ function handleCategoryClick(categoryName) {
         </div>
         <ul className="hidden sm:flex flex-wrap gap-5  my-4">
           <li
-            className={`${style.btnCategory} ${active === "All" ? style.active : ""}`}
+            className={`btnCategory ${active === "All" ? style.active : ""}`}
             onClick={() => handleCategoryClick("All")}
           >
             All
@@ -67,7 +67,7 @@ function handleCategoryClick(categoryName) {
           {categories.map((category) => (
             <li
               key={category.idCategory}
-              className={`${style.btnCategory} ${
+              className={`btnCategory ${
                 active === category.strCategory ? style.active : ""
               }`}
               onClick={() => handleCategoryClick(category.strCategory)}

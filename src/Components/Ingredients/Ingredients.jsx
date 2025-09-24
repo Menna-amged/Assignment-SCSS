@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useIngredients } from '../../Hooks/useMeals';
 import { Link } from 'react-router-dom';
-import style from './Ingredients.module.scss';
+import style from './Ingredients.module.css';
 
 export default function Ingredients() {
   const { data: ingredients, isLoading, error } = useIngredients();

@@ -1,5 +1,5 @@
 import React from 'react'
-import style from "./Layout.module.scss";
+import style from "./Layout.module.css";
 import Footer from '../Footer/Footer';
 import { Outlet } from 'react-router-dom';
 import SideBar from '../SideBar/SideBar';

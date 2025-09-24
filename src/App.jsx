@@ -12,6 +12,9 @@ import Ingredients from './Components/Ingredients/Ingredients'
 import IngredientDetails from './Components/IngredientDetails/IngredientDetails'
 import Areas from './Components/Areas/Areas'
 import AreaDetails from './Components/AreaDetails/AreaDetails'
+import Contact from './Components/Contact/Contact'
+import SignIn from './Components/SignIn/SignIn'
+import SignUp from './Components/SignUp/SignUp'
 
 function App() {
  
@@ -26,6 +29,9 @@ let x = createHashRouter([
       { path: "allmeals", element: <AllMeals /> },
       { path: "ingredients", element: <Ingredients /> },
       { path: "areas", element: <Areas /> },
+      { path: "contact", element: <Contact /> },
+      { path: "signin", element: <SignIn /> },
+      { path: "signup", element: <SignUp /> },
 
       { path: "/category/:categoryName", element: <CategoryDetails /> },
       { path: "/mealdetails/:mealId", element: <MealDetails /> },

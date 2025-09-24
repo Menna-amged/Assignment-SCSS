@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useMealsByArea } from '../../Hooks/useMeals';
-import style from './AreaDetails.module.scss';
+import style from './AreaDetails.module.css';
 
 export default function AreaDetails() {
   const { areaName } = useParams();
